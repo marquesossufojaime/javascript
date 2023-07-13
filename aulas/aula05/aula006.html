@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>primeiros passos de java script</title>
+    <style>
+        body{
+            background-color: rgb(84, 84, 194);
+            color: white;
+            font: normal 16px arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>iniciando estudos com DOM </h1>
+    <p>aqui vai apaecer o resoltado</p>
+    <p>aprendendo a usar o <strong>DOM</strong> em Javascript</p>
+    <div>clique em mim</div>
+    <script>
+        var corpo = window.document.body
+         var p1 = window.document.getElementsByTagName (`p`)[1]
+         window.document.write(`esta escrito assim:` + p1.innerText)
+corpo.style.backgroundColor= `black`
+p1.style.color= `red`
+window.alert(`seja bem vindo `)
+window.confirm(`voce tem mais de 18 anos ? `)
+var nome = window.prompt(`qual o seu nome?`)
+window.alert(`seja bem vindo `+ nome )
+    </script>
+</body>
+</html>
